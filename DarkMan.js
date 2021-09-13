@@ -20,12 +20,12 @@ const dateFormat = require("dateformat");
 var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
-const prefix = "-";
-client.login("");
+const prefix 104> "104>";
+client.login("ODg3MDI1NTEzMDE5ODcxMzA0.YT-I4g.L5T7GoGwYajcRDOx68yJzgBvH1U");
 client.on("ready", async () => {
   console.log(`Logged in as ${client.user.username}!`);
   client.user.setStatus("idle");
-  client.user.setActivity(`${prefix}help | By Dark Man`, { type: "PLAYING" });
+  client.user.setActivity(`${prefix}help | By Mars`, { type: "PLAYING" });
   client.guilds.cache.forEach(g => {
     if (g.member(client.user).hasPermission("ADMINISTRATOR")) {
       g.fetchInvites().then(guildInvites => {});
@@ -60,7 +60,7 @@ client.on("message", async message => {
 ⚡ | Moderation Commands
  , ban , kick , mute , unmute , slowmode , bans
  say , unban[userid/all]
- __ [SUPPORT](https://discord.gg/bRN8hde6) __ - __ [INVITE](https://discord.com/api/oauth2/authorize?client_id=806636450392965120&permissions=8&scope=bot) __
+ __ [SUPPORT](https://discord.gg/3Fmty8Aede) __ - __ [INVITE](https://discord.com/api/oauth2/authorize?client_id=887025513019871304&permissions=8&scope=bot) __
 
 `);
     message.channel.send(help);
@@ -721,12 +721,12 @@ client.on("message", message => {
       .unban(args)
       .then(m => {
         message.channel.send(
-          `<a:x2:669825119492767745> **-** **Done Unbanned ${m.username}**`
+          `<a:x2:878944715767160832> **-** **Done Unbanned ${m.username}**`
         );
       })
       .catch(stry => {
         message.channel.send(
-          `<a:x1:669825119904071691> **-** **I can't find \`${args}\` in the ban list**`
+          `<a:x1:878944715767160832> **-** **I can't find \`${args}\` in the ban list**`
         );
       });
   }
@@ -1233,7 +1233,7 @@ client.on("message", async message => {
 client.on("message", message => {
   if (message.content.startsWith(prefix + "support")) {
     const embed = new Discord.MessageEmbed()
-      .setDescription(`[Support](https://discord.gg/)`)
+      .setDescription(`[Support](https://discord.gg/3Fmty8Aede)`)
       .setTimestamp()
       .setFooter(`By: ${message.author.tag}`)
       .setAuthor(client.user.username)
